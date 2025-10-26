@@ -307,16 +307,6 @@ header {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   animation: fadeZoomIn 1s ease-out both;
 }
-    .countdown div {
-  background: transparent;           /* plus de fond */
-  border: none;                      /* sans bordure */
-  color: #ffffff;                    /* texte blanc */
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* pour la lisibilité */
-  padding: 10px 15px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
 
 .countdown {
   display: flex;
@@ -326,7 +316,18 @@ header {
   flex-wrap: wrap;
 }
 
-
+    .countdown div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 18px 24px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: fadeZoomIn 1s ease-out both;
+}
 .countdown span {
   font-size: 2.2rem;
   font-weight: 700;
@@ -527,13 +528,10 @@ footer {
   -webkit-text-fill-color: transparent;
 
   
-.hero-logo {
-  display: block;
-  margin: 0 auto;
-  width: 35%;
-  max-width: 180px;
-  height: auto;
 }
+
+
+
 
 
 
@@ -864,14 +862,14 @@ footer {
     <div class="hero-background" id="bg1"></div>
     <div class="hero-background-next" id="bg2"></div>
     <div class="hero-content">
-      <img src="images/LOGO UXEL'LOTOISE.png" alt="Logo Uxel'Lotoise" class="hero-logo">
-    </h1>
- <p data-i18n="hero_subtitle">L'événement cycliste du Guidon Vayracois</p>
+      <h1 class="hero-title">l'Uxel'Lotoise</h1>
+
     </div>
 
     
     <div class="highlight-date">
-     
+      <i class="fas fa-calendar-day" aria-hidden="true"></i> 10 août 2025
+    </div>
     <h2 class="countdown-title" data-i18n="subtitle">⏳ Départ dans...</h2>
     <div class="countdown" id="countdown">
       <div><span id="days">00</span><br><small data-i18n="days">Jours</small></div>
@@ -879,7 +877,7 @@ footer {
       <div><span id="minutes">00</span><br><small data-i18n="minutes">Minutes</small></div>
       <div><span id="seconds">00</span><br><small data-i18n="seconds">Secondes</small></div>
     </div>
-   
+    <div class="copyright-hero">© Photo : Rocamadour - CC-BY-NC</div>
   </section>
  
   <footer>
@@ -1237,6 +1235,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
+<script>
+  window.location.href = "/maintenance.html";
+</script>
+
 
 
 
@@ -1245,8 +1247,3 @@ document.addEventListener("DOMContentLoaded", function () {
 </body>
 </html>
 
-   
-    
-
-
- 
