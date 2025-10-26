@@ -529,20 +529,19 @@ footer {
 
   
 }
-    .hero-logo {
-  max-width: 200px;       /* ajuste la taille du logo */
-  width: 80%;
-  height: auto;
+   .hero-logo {
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.6));
-  animation: fadeZoomIn 1s ease-out both;
+  width: 60%;
+  max-width: 350px;
+  height: auto;
 }
 
-
-
-
-
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 70%;
+    max-width: 250px;
+  }
 
 
 .edition-num {
