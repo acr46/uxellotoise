@@ -307,6 +307,16 @@ header {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   animation: fadeZoomIn 1s ease-out both;
 }
+    .countdown div {
+  background: transparent;           /* plus de fond */
+  border: none;                      /* sans bordure */
+  color: #ffffff;                    /* texte blanc */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* pour la lisibilité */
+  padding: 10px 15px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 
 .countdown {
   display: flex;
@@ -316,18 +326,7 @@ header {
   flex-wrap: wrap;
 }
 
-    .countdown div {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(6px);
-  color: #ffffff;
-  padding: 18px 24px;
-  border-radius: 12px;
-  text-align: center;
-  min-width: 80px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  animation: fadeZoomIn 1s ease-out both;
-}
+
 .countdown span {
   font-size: 2.2rem;
   font-weight: 700;
