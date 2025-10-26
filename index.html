@@ -1129,25 +1129,6 @@ document.addEventListener("DOMContentLoaded", function () {
   bg1.style.opacity = 1;
   setInterval(crossfade, 10000); // toutes les 10s
 </script>
-<script>
-  (function () {
-    const targetDate = new Date('August 09, 2026 00:00:00').getTime();
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const s = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById('days').textContent = d.toString().padStart(2, '0');
-      document.getElementById('hours').textContent = h.toString().padStart(2, '0');
-      document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
-      document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
-    };
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  })();
-</script>
 
 <div id="cookie-modal">
   <div class="modal-content" id="cookie-modal-content">
